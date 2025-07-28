@@ -182,6 +182,24 @@ footer p {
 	color: #ffffff;
 }
 
+.registro-link {
+	display: block;
+	text-align: center;
+	margin-top: 1rem;
+}
+
+.registro-link a {
+	color: #95bde9;
+	text-decoration: none;
+	font-weight: 500;
+	transition: color 0.3s ease;
+}
+
+.registro-link a:hover {
+	color: #5562f0;
+	text-decoration: underline;
+}
+
 /* Planes Section */
 #planes h1 {
 	text-align: center;
