@@ -15,7 +15,7 @@ class CreateUsuariosTable extends Migration
 			$table->string('primer_apellido', 50);
 			$table->string('segundo_apellido', 50)->nullable();
 			$table->string('contraseña');
-			$table->enum('estado_registro', ['Pendiente', 'Aprobado'])->default('Pendiente');
+			$table->enum('estado_registro', ['Pendiente', 'Aprobado', 'Rechazado'])->default('Pendiente');
 			$table->softDeletes();
 			$table->timestamps();
 		});
