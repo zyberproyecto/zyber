@@ -19,9 +19,7 @@ document.getElementById("registroForm").addEventListener("submit", function (e) 
 		confirm_password: confirmPassword,
 	};
 
-	axios.post("/registro", formData, {
-			'X-CSRF-TOKEN': document.querySelector('meta[name="csrf-token"]').getAttribute('content')
-	})
+	axios.post("http://localhost:8000/registro", formData)
 		.then((res) => {
 			if (res.data.success) {
 				alert(res.data.message);
